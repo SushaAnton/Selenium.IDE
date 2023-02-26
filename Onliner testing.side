@@ -1,0 +1,822 @@
+{
+  "id": "1413685c-41b2-410a-883c-6c42a0f53099",
+  "version": "2.0",
+  "name": "Onliner testing",
+  "url": "https://www.onliner.by",
+  "tests": [{
+    "id": "636b0bbd-bc36-4559-b1d2-2604480e1bfb",
+    "name": "Find the cheapest RTX 3060 from MSI or Palit",
+    "commands": [{
+      "id": "3e10f35f-cd97-440d-8778-59e091b90984",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d54c1336-5f23-4840-871b-b8ec27dfa171",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f57104fd-8a33-43f2-931e-8b92ed6ff596",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd335ac-a779-40c8-9e33-7a10b3d41822",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Видеокарты"
+    }, {
+      "id": "de028278-31ce-4503-82a6-13044d673fa2",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce4e86bd-29dc-44ac-8d4f-01c0e410c1f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Видеокарты",
+      "targets": [
+        ["linkText=Видеокарты", "linkText"],
+        ["css=.search__result_active .category__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Видеокарты')]", "xpath:link"],
+        ["xpath=//div[@id='search-page']/div[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://catalog.onliner.by/videocard')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Видеокарты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d22d98a5-c9de-46d4-8030-3b1653a00036",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "93beeed3-a173-4d98-8310-28454eac6860",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-order__text",
+      "targets": [
+        ["css=.schema-order__text", "css:finder"],
+        ["xpath=//div[@id='schema-order']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d06be408-45d1-4c2a-8ecf-54e8c4221923",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-order__item:nth-child(2)",
+      "targets": [
+        ["css=.schema-order__item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='schema-order']/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cba6a2b-6081-4e2a-9ba8-cd5dc2f9bed6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,393.6363525390625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc950525-5f3a-43a5-b27a-eb61c3801f4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(4) li:nth-child(1) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(4) li:nth-child(1) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[4]/div[2]/ul/li/label/span[2]", "xpath:idRelative"],
+        ["xpath=//li/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Palit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fe2e91-64e0-4a5e-bd4f-0211efe726a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(4) li:nth-child(3) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(4) li:nth-child(3) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[4]/div[2]/ul/li[3]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'MSI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e3ef5ec-9e61-4619-95a7-fbaca6d27ddc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(9) li:nth-child(4) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(9) li:nth-child(4) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[9]/div[3]/ul/li[4]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[4]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'GeForce RTX 3060')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a044ab1e-5f35-40ea-af07-4f02dbe365f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-product__group:nth-child(2) .schema-product__title span",
+      "targets": [
+        ["css=.schema-product__group:nth-child(2) .schema-product__title span", "css:finder"],
+        ["xpath=//div[@id='schema-products']/div[2]/div/div[3]/div[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Видеокарта Palit GeForce RTX 3060 StormX 8GB GDDR6 NE63060019P1-190AF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abb276a6-296d-4b6c-907e-5521d4c5c4df",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tbody:nth-child(3) > tr:nth-child(7) .value__text",
+      "targets": [
+        ["css=tbody:nth-child(3) > tr:nth-child(7) .value__text", "css:finder"],
+        ["xpath=//div[@id='specs']/div[2]/div/table/tbody[2]/tr[7]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'GeForce RTX 3060')]", "xpath:innerText"]
+      ],
+      "value": "GeForce RTX 3060"
+    }]
+  }, {
+    "id": "4d1e39bb-8d6f-430e-a45d-aba33f7d714c",
+    "name": "Comparethe 3 most expensive RTX 4080 from MSI",
+    "commands": [{
+      "id": "83e6dc62-14d4-4b0a-9ac2-9dd5e8c42a00",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68a29a10-0821-48bd-a7bc-c8f919fd64fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61bdbd6f-b339-4f8e-80a7-896b811336bc",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e06502f9-b965-4e8f-acbe-31c9a7857036",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Видеокарты"
+    }, {
+      "id": "33fc77ca-7b5a-4a30-b603-a11959c6a3cc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "79aa965f-c2a3-4c62-abf3-4404fb15e811",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Видеокарты",
+      "targets": [
+        ["linkText=Видеокарты", "linkText"],
+        ["css=.search__result_active .category__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Видеокарты')]", "xpath:link"],
+        ["xpath=//div[@id='search-page']/div[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://catalog.onliner.by/videocard')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Видеокарты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1695f031-7284-4e9f-b1a6-217fea60bceb",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "070dfdd5-d7e4-4976-9032-976a977327e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-order__text",
+      "targets": [
+        ["css=.schema-order__text", "css:finder"],
+        ["xpath=//div[@id='schema-order']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7381303b-76c4-488f-afea-0b117553c3ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-order__item:nth-child(3) > span",
+      "targets": [
+        ["css=.schema-order__item:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='schema-order']/div[2]/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Дорогие')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0b7cf22-8a2c-4357-ad2d-f93100ca86fa",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,371.81817626953125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "747f4940-3b11-465a-b45b-6804c3e6011a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(4) li:nth-child(3) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(4) li:nth-child(3) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[4]/div[2]/ul/li[3]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'MSI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a79d4e5-cd0a-46fc-afc6-55f3c1fac1fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(9) li:nth-child(2) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(9) li:nth-child(2) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[9]/div[3]/ul/li[2]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[2]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'GeForce RTX 4080')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08a92ada-e4c7-4ae8-82a6-ec8ccbdcfc03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-product__group:nth-child(2) .schema-product__control",
+      "targets": [
+        ["css=.schema-product__group:nth-child(2) .schema-product__control", "css:finder"],
+        ["xpath=//div[@id='schema-products']/div[2]/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]/div[2]/div/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b645af1e-77a7-45ce-8690-e87f3635462f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-product__group:nth-child(3) .schema-product__control",
+      "targets": [
+        ["css=.schema-product__group:nth-child(3) .schema-product__control", "css:finder"],
+        ["xpath=//div[@id='schema-products']/div[3]/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11cd5025-da3b-45fc-970b-6399f5587d66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-product__group:nth-child(5) .schema-product__control",
+      "targets": [
+        ["css=.schema-product__group:nth-child(5) .schema-product__control", "css:finder"],
+        ["xpath=//div[@id='schema-products']/div[5]/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1147ddc2-c8c1-43fd-8f0d-7dd310754635",
+      "comment": "",
+      "command": "click",
+      "target": "css=.compare-button__sub_main",
+      "targets": [
+        ["linkText=3 товара в сравнении", "linkText"],
+        ["css=.compare-button__sub_main", "css:finder"],
+        ["xpath=//div[@id='compare-button-container']/div/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://catalog.onliner.by/compare/mgrtx4080gxt16gx+408016sup+408016supx')]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/div/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'3 товара в сравнении')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06c1420e-fdcf-4cc9-bf32-abd3c0ff5594",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product-table__group:nth-child(5) > .product-table__row:nth-child(8) > .product-table__cell:nth-child(3) .value__text",
+      "targets": [
+        ["css=.product-table__group:nth-child(5) > .product-table__row:nth-child(8) > .product-table__cell:nth-child(3) .value__text", "css:finder"],
+        ["xpath=//table[@id='product-table']/tbody[5]/tr[8]/td[3]/span/span", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[3]/span/span", "xpath:position"]
+      ],
+      "value": "GeForce RTX 4080"
+    }]
+  }, {
+    "id": "ec9ac443-8959-43c7-aff4-9d268471736f",
+    "name": "Find the most expensive 2.5 SSD from Kingston to 4TB",
+    "commands": [{
+      "id": "13903f53-6570-4af9-821c-56237dece1bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d2b79f3-e6e0-4a67-8933-4ff28b83b4f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f186fdc-9015-401d-90e8-4be3ff93de42",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32e7889c-cb78-4f14-92f8-355bdbbe3d0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SSD"
+    }, {
+      "id": "459d32b9-9533-4d98-b964-4ea6e882ba7b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad0b05fa-a064-4793-a359-c652379757dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SSD",
+      "targets": [
+        ["linkText=SSD", "linkText"],
+        ["css=.search__result_active .category__title", "css:finder"],
+        ["xpath=//a[contains(text(),'SSD')]", "xpath:link"],
+        ["xpath=//div[@id='search-page']/div[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://catalog.onliner.by/ssd')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'SSD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b63ff72-4faf-4b26-817e-e68d913858af",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "afd8698f-3c81-4a74-8ea0-eb5442df5641",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-order__text",
+      "targets": [
+        ["css=.schema-order__text", "css:finder"],
+        ["xpath=//div[@id='schema-order']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc2e2b89-f6f0-45ce-a7b8-26a1ae063e2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-order__item:nth-child(3) > span",
+      "targets": [
+        ["css=.schema-order__item:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='schema-order']/div[2]/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Дорогие')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56c2da47-f2f1-47d2-a3ad-633bec9f123f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,59.09090805053711)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dd16228-9e7b-48aa-8897-6151b237435f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(4) li:nth-child(2) .i-checkbox__faux",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(4) li:nth-child(2) .i-checkbox__faux", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[4]/div[2]/ul/li[2]/label/span/span", "xpath:idRelative"],
+        ["xpath=//li[2]/label/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f51a6ab5-5008-4670-b763-702ec10cabfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter-control_select:nth-child(2) > .schema-filter-control__item",
+      "targets": [
+        ["css=.schema-filter-control_select:nth-child(2) > .schema-filter-control__item", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[8]/div[3]/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb0d2574-148c-4237-b459-7252b4e4bdfc",
+      "comment": "",
+      "command": "select",
+      "target": "css=.schema-filter-control_select:nth-child(2) > .schema-filter-control__item",
+      "targets": [],
+      "value": "label=4 ТБ"
+    }, {
+      "id": "6cc790ea-2bce-4dc6-9705-cac54f7b398d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(9) li:nth-child(2) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(9) li:nth-child(2) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[9]/div[3]/ul/li[2]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div[3]/ul/li[2]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'2.5\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32159e5b-3275-4f56-9a02-13f20e9b6e66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-product__group:nth-child(2) .schema-product__title span",
+      "targets": [
+        ["css=.schema-product__group:nth-child(2) .schema-product__title span", "css:finder"],
+        ["xpath=//div[@id='schema-products']/div[2]/div/div[3]/div[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SSD Kingston DC500M 3.84TB SEDC500M/3840G')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "178271a0-4802-4675-9623-c886f75567a3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tbody:nth-child(3) > tr:nth-child(3) .value__text",
+      "targets": [
+        ["css=tbody:nth-child(3) > tr:nth-child(3) .value__text", "css:finder"],
+        ["xpath=//div[@id='specs']/div[2]/div/table/tbody[2]/tr[3]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2.5\"')]", "xpath:innerText"]
+      ],
+      "value": "2.5\""
+    }, {
+      "id": "58125b41-5c24-43a6-b13e-31b3143af1fb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tbody:nth-child(3) > tr:nth-child(2) .value__text",
+      "targets": [
+        ["css=tbody:nth-child(3) > tr:nth-child(2) .value__text", "css:finder"],
+        ["xpath=//div[@id='specs']/div[2]/div/table/tbody[2]/tr[2]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tbody[2]/tr[2]/td[2]/span", "xpath:position"]
+      ],
+      "value": "3.84 ТБ"
+    }, {
+      "id": "f7e686a2-6f54-490f-b98c-09cadbae09ca",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.breadcrumbs__item:nth-child(3) span",
+      "targets": [
+        ["css=.breadcrumbs__item:nth-child(3) span", "css:finder"],
+        ["xpath=//div[@id='container']/div/div/div/div/div[2]/div/div/div[2]/ol/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//ol/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Kingston')]", "xpath:innerText"]
+      ],
+      "value": "Kingston"
+    }]
+  }, {
+    "id": "aeb4b8da-bd60-448c-a5b1-1fdce2e6e72c",
+    "name": "Find all M2 SSDs from Samsung from 2TB and more",
+    "commands": [{
+      "id": "f277e555-a3bb-4596-a019-00a905483295",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcc632d8-c61c-4f25-8ab9-5778324afc82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa9fb6b-3b8a-4fee-968c-d1acf45334fb",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea149b4a-ba97-443e-a603-c8a324301cf6",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SSD"
+    }, {
+      "id": "4dc7e30c-b42b-4e9c-bd01-3c321b585b5d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa1afc7f-b86b-49d0-8d08-69c6715ead12",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SSD",
+      "targets": [
+        ["linkText=SSD", "linkText"],
+        ["css=.search__result_active .category__title", "css:finder"],
+        ["xpath=//a[contains(text(),'SSD')]", "xpath:link"],
+        ["xpath=//div[@id='search-page']/div[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://catalog.onliner.by/ssd')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'SSD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90d5b33a-8672-426b-b96c-56e96946f442",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6d1afa2-5f31-497f-95ef-e21f9def421e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,533.6363525390625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cb42757-f965-48c4-99a6-e4ea592d70df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(4) li:nth-child(1) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(4) li:nth-child(1) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[4]/div[2]/ul/li/label/span[2]", "xpath:idRelative"],
+        ["xpath=//li/label/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e43076ba-4549-478c-8572-da0c728905a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter-control_select:nth-child(1) > .schema-filter-control__item",
+      "targets": [
+        ["css=.schema-filter-control_select:nth-child(1) > .schema-filter-control__item", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[8]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f96ef05-9d81-47d3-a142-20f554f6eddd",
+      "comment": "",
+      "command": "select",
+      "target": "css=.schema-filter-control_select:nth-child(1) > .schema-filter-control__item",
+      "targets": [],
+      "value": "label=2 ТБ"
+    }, {
+      "id": "f8ea388c-cab7-4ada-b5a4-cbf0c896368b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(9) li:nth-child(1) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(9) li:nth-child(1) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[9]/div[3]/ul/li/label/span[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div[3]/ul/li/label/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0c21b976-d7a7-41f2-9852-a76117e9a34d",
+    "name": "Find hard drives from WD on 16TB no more than 1000 BYN",
+    "commands": [{
+      "id": "403f27a3-1c1e-4823-b2dd-0eb8a33565e2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc49117b-06e2-4c7a-80f2-72bf709aa929",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080 ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6f51d4f-d6cf-4c0b-a94e-181799fe08aa",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bfbdcb3-86a7-4a3f-8326-7d8b553d0b17",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.fast-search__input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='fast-search']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Жесткие диски"
+    }, {
+      "id": "89789a6a-bb9d-49d7-ba93-bd6e2a86e380",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "9948f9d6-1acf-4b8c-b304-f616f6fa3367",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Жесткие диски",
+      "targets": [
+        ["linkText=Жесткие диски", "linkText"],
+        ["css=.search__result_active .category__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Жесткие диски')]", "xpath:link"],
+        ["xpath=//div[@id='search-page']/div[2]/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://catalog.onliner.by/hdd')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Жесткие диски')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "228fe915-e2b2-4fbb-9d5c-677c5b04d5f6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bbea97a-f8bc-4a67-99a2-160c4663c30e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter-control:nth-child(2) > .schema-filter__number-input_price",
+      "targets": [
+        ["css=.schema-filter-control:nth-child(2) > .schema-filter__number-input_price", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[3]/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb1d4dcb-811f-485e-bb65-5e88766c7795",
+      "comment": "",
+      "command": "type",
+      "target": "css=.schema-filter-control:nth-child(2) > .schema-filter__number-input_price",
+      "targets": [
+        ["css=.schema-filter-control:nth-child(2) > .schema-filter__number-input_price", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[3]/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1 000"
+    }, {
+      "id": "48564803-10de-4109-89ed-9b571ee091ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter__fieldset:nth-child(2) li:nth-child(1) .schema-filter__checkbox-text",
+      "targets": [
+        ["css=.schema-filter__fieldset:nth-child(2) li:nth-child(1) .schema-filter__checkbox-text", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[2]/div[2]/ul/li/label/span[2]", "xpath:idRelative"],
+        ["xpath=//li/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'WD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "868d5b35-06cb-4699-b035-3c775514767b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schema-filter-control_select:nth-child(1) > .schema-filter-control__item",
+      "targets": [
+        ["css=.schema-filter-control_select:nth-child(1) > .schema-filter-control__item", "css:finder"],
+        ["xpath=//div[@id='schema-filter']/div[5]/div[6]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "299c16d7-266d-422e-9de6-7b6f4df9c850",
+      "comment": "",
+      "command": "select",
+      "target": "css=.schema-filter-control_select:nth-child(1) > .schema-filter-control__item",
+      "targets": [],
+      "value": "label=16 ТБ"
+    }]
+  }],
+  "suites": [{
+    "id": "214a1afa-b11e-4b01-8335-30b68c1f61ab",
+    "name": "Onliner",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["636b0bbd-bc36-4559-b1d2-2604480e1bfb", "4d1e39bb-8d6f-430e-a45d-aba33f7d714c", "aeb4b8da-bd60-448c-a5b1-1fdce2e6e72c", "0c21b976-d7a7-41f2-9852-a76117e9a34d", "ec9ac443-8959-43c7-aff4-9d268471736f"]
+  }],
+  "urls": ["https://www.onliner.by/"],
+  "plugins": []
+}
